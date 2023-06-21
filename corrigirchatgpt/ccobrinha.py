@@ -1,3 +1,9 @@
+#Erro: quando se dá game over é impossível fechar a janela e o texto de game over está metado fora da tela
+# e o chat gpt importou a biblioteca time e não usou ela em momento algum no código
+
+#A parte de não fechar a janela foi um erro de lógica, provavelmente pelo motivo chat gpt ser uma ai que preve a proxima palavra em um frase e não de lógica
+#A parte do texto estar descentralizado na tela foi um erro de cálculo( o chat gpt é conhecido por ser ruim em matemática)
+# e a parte do import foi provavelmente pelo mesmo motivo da primeira
 import pygame
 import time
 import random
