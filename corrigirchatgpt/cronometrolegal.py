@@ -1,9 +1,13 @@
 import time
+import keyboard
+
+def verifica_tecla(tecla):
+    return keyboard.is_pressed(tecla)
+
 tempo = 0
 def cronometro():
-    sla = 'a'
     while True:
-        if sla == '':
+        if verifica_tecla(' '):
             break
         global tempo
         minutos, segundos = divmod(tempo, 60)
@@ -12,5 +16,5 @@ def cronometro():
         #sla = input('\r')
         time.sleep(1)
         tempo += 1
-print("Ele nunca para, então é melhor só fechar o terminal")
+print("Segure espaço para parar")
 cronometro()
