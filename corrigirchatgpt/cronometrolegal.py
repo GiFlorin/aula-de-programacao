@@ -13,7 +13,6 @@ def cronometro():
         minutos, segundos = divmod(tempo, 60)
         timer = '{:02d}:{:02d}'.format(minutos, segundos)
         print(timer, end="\r")
-        #sla = input('\r')
         time.sleep(1)
         tempo += 1
 print("Segure espaço para parar")
